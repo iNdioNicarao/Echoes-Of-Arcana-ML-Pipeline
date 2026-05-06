@@ -36,8 +36,11 @@ The custom dataset was programmatically constructed to simulate complex esoteric
 To ensure longevity and variation, the fine-tuning data introduced conditional archetype triggers (e.g., "The Trickster" or "The Shadow Weaver"). By blending these examples, the model learns to shift its tone based on the emotional weight of the drawn cards or the time of day.
 
 ## Contents
-- `generate_dataset.py`: The python script responsible for algorithmically constructing the esoteric training data.
-- `diagnostics/`: MLX diagnostic scripts used for verifying model integrity, tokenization, RoPE positioning, and inference testing.
+- `Inference/`: The Swift/MLX on-device inference engine implementation that executes the QWEN model natively on Apple Silicon.
+- `Model-Architecture/`: The base Qwen2.5-1.5B model configuration and tokenization setup.
+- `TRAINING_METHODOLOGY.md`: Comprehensive documentation on the LoRA fine-tuning strategy, dataset structuring, and archetype injection.
+- `oracle_system_prompt.txt`: The advanced system prompt that acts as the strict rulebook alongside the fine-tuning.
+- `generate_dataset.py`: The Python script responsible for algorithmically constructing the esoteric training data.
 - `dataset_sample.jsonl`: Sanitized proof-of-work dataset samples demonstrating the input-output structural alignments.
 
 ## Proof of Inference (Offline/On-Device)
