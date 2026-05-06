@@ -1,0 +1,33 @@
+# Model weights
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.onnx
+
+# Adapters and MLX files
+adapters/
+*.mlx
+
+# Data
+*.jsonl
+!dataset_sample.jsonl
+
+# Environments and API
+.env
+.env.local
+.env.development
+*.key
+*.pem
+secrets/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
